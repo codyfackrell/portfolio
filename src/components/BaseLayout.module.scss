@@ -18,6 +18,17 @@ footer {
     color: $white;
   }
 
+  button {
+    color: $white;
+    border-color: $white;
+    background: $dark
+  }
+
+  button:hover {
+    background: $white;
+    color: $dark
+  }
+
   footer {
     color: $white;
   }

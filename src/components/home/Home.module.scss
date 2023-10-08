@@ -37,6 +37,20 @@ a:hover {
   transition: color 200ms ease;
 }
 
+button {
+  border: 1px solid $dark;
+  border-radius: 25px;
+  font-size: 15px;
+  height: 40px;
+  padding: 0 25px;
+  margin: 3.5px 0;
+}
+
+button:hover {
+  background: $dark;
+  color: white
+}
+
 @keyframes wave {
   0% { transform: rotate( 0.0deg) }
   10% { transform: rotate(14.0deg) }
