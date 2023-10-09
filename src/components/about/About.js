@@ -1,7 +1,7 @@
 import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
-import {Box} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import {info} from "../../info/Info";
 
 
@@ -52,9 +52,17 @@ export default function About() {
 
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
-            <Terminal text={aboutMeText()}/>
+            {/* <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
-            <Terminal text={miscText()}/>
+            <Terminal text={miscText()}/>  */}
+            <h2>About me</h2>
+            <Typography variant='h6' align='center' paragraph>This will be a paragraph about me. I can include infromation about my coding journey and mental health profession. I can also include infromation about my hobbies and family.</Typography>
+            <Typography variant='h3' gutterBottom>Skills:</Typography>
+            <Box>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style={{width: '125px'}}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style={{width: '125px'}}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style={{width: '125px'}}/>
+            </Box>
         </Box>
     )
 }
