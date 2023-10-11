@@ -63,11 +63,51 @@ export const info = {
 
     ],
     bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
-    skills:
+   skills: [
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
-        }
+            name: 'javascript',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+        },
+        {
+            name: 'react',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+        },
+        {
+            name: 'node.js',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+        },
+        {
+            name: 'postgreSQL',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+        },
+        {
+            name: 'sass',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
+        },
+        {
+            name: 'tailwind',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'
+        },
+        {
+            name: 'typescript',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+        },
+        {
+            name: 'materialui',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg'
+        },
+        {
+            name: 'redux',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg'
+        },
+   ]
+
+
+
+        // {
+        //     proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
+        //     exposedTo: ['nodejs', 'python', 'adobe illustrator']
+        // }
     ,
     hobbies: [
         {

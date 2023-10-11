@@ -10,31 +10,6 @@ h1 {
   }
 }
 
-h2 {
-  font-size: 1.25rem;
-  text-align: center;
-  @media only screen and (min-width: 940px) {
-    font-size: 2rem;
-    text-align: left;
-  }
-}
-
-.pink {
-  color: $pink;
-}
-
-.green {
-  color: $green;
-}
-
-.skills {
-  columns: 1;
-  @media only screen and (min-width: 940px) {
-    columns: 2;
-  }
-
-  li {
-    margin: 0;
-    line-height: 1.75;
-  }
+img {
+  width: 150px
 }

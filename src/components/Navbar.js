@@ -43,7 +43,6 @@ export default function Navbar({darkMode, handleClick}) {
                          sx={{borderImageSource: info.gradient}}>
                         <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
                             {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
-                            {/* {link.type && <h1>{link.name}</h1>} */}
                             {link.type && <h1 style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontFamily: 'Advent Pro'}}>{'<'}<span style={{ background: 'none', WebkitBackgroundClip: 'initial', WebkitTextFillColor: 'initial', textTransform: 'uppercase' }}>CF</span>{'/>'}</h1>}
                         </Link>
                     </Box>
