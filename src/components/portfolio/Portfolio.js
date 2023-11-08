@@ -5,13 +5,13 @@ import {info} from "../../info/Info";
 
 export default function Portfolio() {
     return (
-        <Box height={'100vh'} >
-            <h2>Portfolio</h2>
+        <Box>
+            <h3>Portfolio</h3>
             <Box>
             <Grid container display={'flex'} justifyContent={'center'}>
                 {info.portfolio.map((project, index) => (
                    <Grid item xs={12} md={6} key={index}>
-                       <PortfolioBlock image={project.image} live={project.live} source={project.source} title={project.title} />
+                       <PortfolioBlock image={project.image} title={project.title} stack={project.stack} description={project.description} live={project.live} source={project.source}  />
                    </Grid>
                 ))}
             </Grid>

@@ -6,8 +6,14 @@ import {Box} from "@mui/material";
 import {info} from "../info/Info";
 
 const links = [
+    // {
+    //     name: 'Home',
+    //     to: '/',
+    //     active: 'home'
+    // },
     {
-        name: 'Home',
+        name: info.initials,
+        type: 'initials',
         to: '/',
         active: 'home'
     },
@@ -17,33 +23,40 @@ const links = [
         active: 'about'
     },
     {
-        name: info.initials,
-        type: 'initials',
-        to: '/',
-        active: 'home'
-    },
-    {
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
     }
 ]
 
+const sections = {
+    about: 'about',
+    portfolio: 'portfolio'
+}
+
 export default function Navbar({darkMode, handleClick}) {
     const location = useLocation()
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
+    const scrollTo = (sectionId) => {
+        const section = document.getElementById(sectionId)
+    }
+
     return (
         <Box component={'nav'} width={'100%'}>
-            <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
+            <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'} 
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>
                 {links.map((link, index) => (
-                    <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
-                         sx={{borderImageSource: info.gradient}}>
-                        <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
+                    <Box key={index} component={'li'} 
+                    // className={(link.active === active && !link.type) && Style.active}
+                        //  sx={{borderImageSource: info.gradient}}
+                         >
+                        <Link 
+                        to={link.to} onClick={() => setActive(link.active)} className={Style.link}
+                        >
                             {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
-                            {link.type && <h1 style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontFamily: 'Advent Pro'}}>{'<'}<span style={{ background: 'none', WebkitBackgroundClip: 'initial', WebkitTextFillColor: 'initial', textTransform: 'uppercase' }}>CF</span>{'/>'}</h1>}
+                            {link.type && <h1 style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontFamily: 'Advent Pro'}}>{'<'}<span style={{ background: 'none', WebkitBackgroundClip: 'initial', WebkitTextFillColor: 'initial', textTransform: 'uppercase' }}>{info.initials}</span>{'/>'}</h1>}
                         </Link>
                     </Box>
                 ))}
