@@ -10,6 +10,7 @@ export default function About() {
       flexDirection={"column"}
       alignItems={"center"}
       mx={{ xs: "3rem", md: "10rem" }}
+      minHeight={"100vh"}
     >
       <h3>About Me</h3>
       <p>{info.bio}</p>

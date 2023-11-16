@@ -127,13 +127,13 @@ export const info = {
             description: "A web application to help racing novices or enthusiasts learn interesting facts and test their knowledge about some of the most popular race tracks in the world.",
             image: mock2
         },
-        {
-            title: "Press Zero",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            stack: "React | Tailwind CSS | Node.js",
-            description: "",
-            image: mock3
-        },
+        // {
+        //     title: "Press Zero",
+        //     live: "https://paytonpierce.dev",
+        //     source: "https://github.com/paytonjewell",
+        //     stack: "React | Tailwind CSS | Node.js",
+        //     description: "",
+        //     image: mock3
+        // },
     ]
 }
