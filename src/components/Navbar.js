@@ -1,46 +1,29 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Style from './Navbar.module.scss';
 import Toggler from "./home/Toggler";
-import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
 import {info} from "../info/Info";
 
 const links = [
-    // {
-    //     name: 'Home',
-    //     to: '/',
-    //     active: 'home'
-    // },
     {
         name: info.initials,
         type: 'initials',
-        to: '/',
+        to: 'about',
         active: 'home'
     },
     {
         name: 'About Me',
-        to: '/about',
+        to: 'about',
         active: 'about'
     },
     {
         name: 'Portfolio',
-        to: '/portfolio',
+        to: 'portfolio',
         active: 'portfolio'
     }
 ]
 
-const sections = {
-    about: 'about',
-    portfolio: 'portfolio'
-}
-
-export default function Navbar({darkMode, handleClick}) {
-    const location = useLocation()
-    const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
-
-    const scrollTo = (sectionId) => {
-        const section = document.getElementById(sectionId)
-    }
+export default function Navbar({darkMode, handleTheme}) {
 
     return (
         <Box component={'nav'} width={'100%'}>
@@ -49,20 +32,19 @@ export default function Navbar({darkMode, handleClick}) {
                  textTransform={'lowercase'} fontSize={'1rem'}>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} 
-                    // className={(link.active === active && !link.type) && Style.active}
-                        //  sx={{borderImageSource: info.gradient}}
                          >
-                        <Link 
-                        to={link.to} onClick={() => setActive(link.active)} className={Style.link}
+                        <li 
+                        className={Style.link}
                         >
                             {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
                             {link.type && <h1 style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontFamily: 'Advent Pro'}}>{'<'}<span style={{ background: 'none', WebkitBackgroundClip: 'initial', WebkitTextFillColor: 'initial', textTransform: 'uppercase' }}>{info.initials}</span>{'/>'}</h1>}
-                        </Link>
+                        </li>
                     </Box>
                 ))}
-                <li>
-                    <Toggler darkMode={darkMode} handleClick={handleClick}/>
-                </li>
+{/* Dark Mode Toggler */}
+                {/* <li>
+                    <Toggler darkMode={darkMode} handleTheme={handleTheme}/>
+                </li> */}
             </Box>
         </Box>
     )

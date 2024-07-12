@@ -5,7 +5,7 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 
 function App() {
   let [darkMode, setDarkMode] = useState(false);
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <Box className={darkMode ? Style.dark : Style.light}>
-      <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode} />
+      <Navbar darkMode={darkMode} handleTheme={handleToggleDarkMode} />
       <Home />
       <About />
       <Portfolio />

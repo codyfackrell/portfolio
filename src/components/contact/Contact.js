@@ -13,7 +13,7 @@ const Contact = () => {
         </p>
         <Box fontSize={{ xs: "2rem", md: "2rem" }} display="flex" justifyContent='center' alignItems="center">
           <i className="fa fa-envelope" />
-          <p style={{ fontSize: "2rem", marginLeft: '15px'}}>{info.email}</p>
+          <a style={{ fontSize: "2rem", marginLeft: '15px'}}>{info.email}</a>
         </Box>
         <div>
           <Box

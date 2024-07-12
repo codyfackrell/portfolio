@@ -1,7 +1,7 @@
 import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
+// import mock3 from "../img/mock3.png"
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 /*
@@ -31,7 +31,7 @@ export const info = {
         },
         {
             emoji: "💻",
-            text: "React | TypeScript"
+            text: "React Developer"
         },
         {
             emoji: "📧",
@@ -57,17 +57,17 @@ export const info = {
             name: 'javascript',
             link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
         },
-        {
-            name: 'typescript',
-            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
-        },
+        // {
+        //     name: 'typescript',
+        //     link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+        // },
         {
             name: 'react',
             link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
         },
         {
             name: 'tailwind',
-            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'
         },
         {
             name: 'sass',
@@ -83,7 +83,7 @@ export const info = {
         },
         {
             name: 'node.js',
-            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg'
         },
         {
             name: 'postgreSQL',

@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./About.module.scss";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { info } from "../../info/Info";
 
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
       flexDirection={"column"}
       alignItems={"center"}
       mx={{ xs: "3rem", md: "10rem" }}
-      minHeight={"100vh"}
+      minHeight={"100vh"} 
     >
       <h3>About Me</h3>
       <p>{info.bio}</p>
