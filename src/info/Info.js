@@ -113,17 +113,17 @@ export const info = {
     portfolio: [
         {
             title: "Tour de Globe",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            stack: "React | Tailwind CSS | Node.js",
+            live: "https://www.loom.com/share/407a2b8fbcab4713a93d3a2ba11fac7f?sid=0c5193a5-78cf-4dec-8302-2985f74f9d8d", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/codyfackrell/TourDeGlobe", // this should be a link to the **repository** of the project, where the code is hosted.
+            stack: "React | Node.js | Express.js",
             description: "A country flashcard web application to help you learn the capitals and flags of countries around the world in a fun and interactive way.",
             image: mock1
         },
         {
             title: "Circuits",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            stack: "React | Tailwind CSS | Node.js",
+            live: "https://www.loom.com/share/6dcf3846d1a84c089f0c55ccef61ee9c?sid=de9ce347-1170-4430-8da8-5b359f60b284",
+            source: "https://github.com/codyfackrell/circuits",
+            stack: "React | Node.js | Express.js",
             description: "A web application to help racing novices or enthusiasts learn interesting facts and test their knowledge about some of the most popular race tracks in the world.",
             image: mock2
         },
