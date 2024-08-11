@@ -6,6 +6,7 @@ import { info } from "../../info/Info";
 export default function About() {
   return (
     <Box
+      id="about"
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}

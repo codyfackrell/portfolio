@@ -11,9 +11,9 @@ const Contact = () => {
         <p style={{ fontSize: "3rem", margin: "35px 0 75px 0" }}>
           I'd love to chat more!
         </p>
-        <Box fontSize={{ xs: "2rem", md: "2rem" }} display="flex" justifyContent='center' alignItems="center">
+        <Box fontSize={{ xs: "2rem", md: "2rem" }} href={`mailto:${info.email}`} display="flex" justifyContent='center' alignItems="center">
           <i className="fa fa-envelope" />
-          <a style={{ fontSize: "2rem", marginLeft: '15px'}}>{info.email}</a>
+          <a style={{ fontSize: "2rem", marginLeft: '15px'}} >{info.email}</a>
         </Box>
         <div>
           <Box
@@ -32,7 +32,6 @@ const Contact = () => {
                 label={social.label}
               />
             ))}
-            {/* <button>resume</button> */}
           </Box>
         </div>
       </Box>

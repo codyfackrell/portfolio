@@ -51,7 +51,7 @@ export const info = {
         },
     ],
 
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Cody. I have over seven years in the mental health industry working with a variety of populations. Over the last couple of years, I have been able to acquire technical skills that have allowed me to have a unique skill set. I have built several projects utilizing the technologies listed below. Feel free to reach out!",
    skills: [
         {
             name: 'javascript',

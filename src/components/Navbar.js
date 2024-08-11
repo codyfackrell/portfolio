@@ -3,6 +3,7 @@ import Style from './Navbar.module.scss';
 import Toggler from "./home/Toggler";
 import {Box} from "@mui/material";
 import {info} from "../info/Info";
+import {Link} from "react-scroll"
 
 const links = [
     {
@@ -36,8 +37,8 @@ export default function Navbar({darkMode, handleTheme}) {
                         <li 
                         className={Style.link}
                         >
-                            {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
-                            {link.type && <h1 style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontFamily: 'Advent Pro'}}>{'<'}<span style={{ background: 'none', WebkitBackgroundClip: 'initial', WebkitTextFillColor: 'initial', textTransform: 'uppercase' }}>{info.initials}</span>{'/>'}</h1>}
+                            {!link.type && <Link to={link.to} smooth={true} duration={500} style={{padding: '0.5rem 0', cursor: 'pointer' }}>{link.name}</Link>}
+                            {link.type && <Link to={link.to} smooth={true} duration={500} style={{cursor: 'pointer' }}><h1 style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontFamily: 'Advent Pro'}}>{'<'}<span style={{ background: 'none', WebkitBackgroundClip: 'initial', WebkitTextFillColor: 'initial', textTransform: 'uppercase' }}>{info.initials}</span>{'/>'}</h1></Link>}
                         </li>
                     </Box>
                 ))}
