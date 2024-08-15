@@ -17,9 +17,9 @@ const Contact = () => {
         height={{ xs: "400px", md: "450px" }}
         bgcolor="#d4eefc"
         borderRadius="32px"
-        display='flex'
-        flexDirection='column'
-        justifyContent='center'
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
       >
         <p>CONTACT ME</p>
         <p style={{ fontSize: "3rem", margin: "35px 0 50px 0" }}>
@@ -31,16 +31,18 @@ const Contact = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <i className="fa fa-envelope" />
-          <Box
-            sx={{
-              fontSize: "2rem",
-              marginLeft: "15px",
-              display: { xs: "none", md: "inline" },
-            }}
-          >
-            {info.email}
-          </Box>
+          <a href="mailto:cody.j.fackrell@gmail.com">
+            <i className="fa fa-envelope" />
+            <Box
+              sx={{
+                fontSize: "2rem",
+                marginLeft: "15px",
+                display: { xs: "none", md: "inline" },
+              }}
+            >
+              {info.email}
+            </Box>
+          </a>
         </Box>
 
         <div>

@@ -15,7 +15,7 @@ export const info = {
   lastName: "Fackrell",
   email: "cody.j.fackrell@gmail.com",
   initials: "CF",
-  position: "Front-End Developer",
+  position: "Front-End Engineer",
   selfPortrait: self,
   gradient: `-webkit-linear-gradient(135deg, ${colors})`,
   baseColor: colors[0],
@@ -31,7 +31,7 @@ export const info = {
     },
     {
       emoji: "💻",
-      text: "React Developer",
+      text: "React | Node.js | Express.js",
     },
     {
       emoji: "📧",
