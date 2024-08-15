@@ -27,7 +27,7 @@ const links = [
 export default function Navbar({darkMode, handleTheme}) {
 
     return (
-        <Box component={'nav'} width={'100%'}>
+        <Box component={'nav'} width={'100%'} mt={1}>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'} 
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>

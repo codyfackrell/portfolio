@@ -5,7 +5,7 @@ import {info} from "../../info/Info";
 
 export default function Portfolio() {
     return (
-        <Box id="portfolio">
+        <Box id="portfolio" pt={10}>
             <h3>Portfolio</h3>
             <Box>
             <Grid container display={'flex'} justifyContent={'center'}>
