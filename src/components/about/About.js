@@ -13,8 +13,11 @@ export default function About() {
       mx={{ xs: "3rem", md: "10rem" }}
       minHeight={"100vh"} 
     >
+            <Box width={{xs: '75%', md: "80%"}} height={{xs: '400px', md: '100%'}} bgcolor="#d4eefc" borderRadius="32px" pt={"50px"}>
+
       <h3>About Me</h3>
       <p>{info.bio}</p>
+      </Box>
       <br></br>
       <h3>Skills</h3>
       <Box>
