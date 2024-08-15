@@ -35,7 +35,7 @@ function App() {
       <Portfolio />
       <Contact />
       <Box component={"footer"} py={"1.5rem"} sx={{ opacity: 0.7 }}>
-        <p>codyfackrell, 2023</p>
+        <p>codyfackrell, 2024</p>
       </Box>
     </Box>
   );
