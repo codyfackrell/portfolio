@@ -15,7 +15,7 @@ export const info = {
   lastName: "Fackrell",
   email: "cody.j.fackrell@gmail.com",
   initials: "CF",
-  position: "Front-End Engineer",
+  position: "Front-End Developer",
   selfPortrait: self,
   gradient: `-webkit-linear-gradient(135deg, ${colors})`,
   baseColor: colors[0],

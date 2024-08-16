@@ -5,8 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-
 }
 
 body {
@@ -17,6 +15,12 @@ body {
     color: $dark;
     background-color: $white;
     box-sizing: border-box;
+}
+
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
 }
 
 h2, h3, h4 {
