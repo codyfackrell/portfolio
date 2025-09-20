@@ -1,0 +1,30 @@
+@import "../variables.modules";
+
+nav {
+  // margin: 0;
+  transition: $transition;
+  // position: fixed;
+  // background-color: $white;
+}
+
+.active {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+}
+
+li {
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: $transition;
+  }
+}
+
+.link:hover {
+  color: unset;
+}
+
+img {
+  width: 50%
+}
