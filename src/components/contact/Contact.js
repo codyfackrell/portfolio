@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Box
       width={"100%"}
-      height={"auto%"}
+      height={"auto"}
       display="flex"
       justifyContent="center"
       my="10rem"
