@@ -17,15 +17,15 @@ h1 {
   display: inline-block;
 }
 
-// a {
-//   color: $dark;
-//   transition: color 200ms ease;
-// }
+a {
+  color: $dark;
+  transition: color 200ms ease;
+}
 
-// a:hover {
-//   color: $lightgray;
-//   transition: color 200ms ease;
-// }
+a:hover {
+  color: $lightgray;
+  transition: color 200ms ease;
+}
 
 #ResumeBtn {
   font-family: "Karla";
@@ -33,12 +33,12 @@ h1 {
   background-color: $white;
   border-radius: 10px;
   font-size: 1rem;
-  padding: .5rem 1.5rem;
-}
+  padding: 0.5rem 1.5rem;
 
-#ResumeBtn:hover {
-  background: $dark;
-  color: white
+  &:hover {
+    background: $dark;
+    color: $white;
+  }
 }
 
 @keyframes wave {
