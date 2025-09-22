@@ -30,7 +30,7 @@ export default function Home() {
                ))}
                {/* <a id="ResumeBtn" href="public/cody-fackrell-resume.pdf" download="Cody Fackrell Resume">resume</a> */}
                <Box p={1} border={'1.5px solid black'} borderRadius={'10px'}>
-                  <IconLink title={'Resume'}/>
+                  resume
                 </Box>
             </Box>
          </Box>
