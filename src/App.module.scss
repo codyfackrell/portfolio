@@ -29,7 +29,7 @@ h2, h3, h4 {
   }
 }
 
-a {
+button {
   font-family: "Karla";
   border: 1.5px solid $dark;
   background-color: $white;
@@ -42,13 +42,13 @@ li {
     color: $dark;
 }
 
-// a,
-// a:link,
-// a:hover,
-// a:visited,
-// a:active {
-//     text-decoration: none;
-// }
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
 
 img {
     max-width: 100%;

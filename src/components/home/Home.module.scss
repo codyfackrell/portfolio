@@ -27,6 +27,15 @@ h1 {
 //   transition: color 200ms ease;
 // }
 
+#ResumeBtn {
+  font-family: "Karla";
+  border: 1.5px solid $dark;
+  background-color: $white;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: .5rem 1.5rem;
+}
+
 #ResumeBtn:hover {
   background: $dark;
   color: white
