@@ -17,17 +17,17 @@ h1 {
   display: inline-block;
 }
 
-a {
-  color: $dark;
-  transition: color 200ms ease;
-}
+// a {
+//   color: $dark;
+//   transition: color 200ms ease;
+// }
 
-a:hover {
-  color: $lightgray;
-  transition: color 200ms ease;
-}
+// a:hover {
+//   color: $lightgray;
+//   transition: color 200ms ease;
+// }
 
-button:hover {
+#ResumeBtn:hover {
   background: $dark;
   color: white
 }
