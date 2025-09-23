@@ -15,7 +15,7 @@ const Contact = () => {
       <Box
         width={{ xs: "75%", md: "800px" }}
         height={"auto"}
-        p={"15px"}
+        p={"25px"}
         bgcolor="#d4eefc"
         borderRadius="32px"
         display="flex"
