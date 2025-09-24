@@ -9,15 +9,7 @@ import { Box } from "@mui/material";
 
 function App() {
   return (
-    <Box
-      sx={{
-        paddingTop: "env(safe-area-inset-top, 20px)",
-        paddingRight: "env(safe-area-inset-right, 10px)",
-        paddingBottom: "env(safe-area-inset-bottom, 20px)",
-        paddingLeft: "env(safe-area-inset-left, 10px)",
-        minHeight: "100vh",
-        backgroundColor: "#fff",
-      }}>
+    <Box>
       <Navbar />
       <Home />
       <About />
