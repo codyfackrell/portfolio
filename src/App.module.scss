@@ -10,13 +10,13 @@
 html, body {
   width: 100%;
   min-height: 100%;
+  background-color: $white;
 }
 
 body {
     font-family: 'Karla', 'Roboto', Helvetica, sans-serif;
     font-size: 1.5vh;
     color: $dark;
-    background-color: $white;
     box-sizing: border-box;
 }
 

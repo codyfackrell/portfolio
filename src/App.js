@@ -16,6 +16,7 @@ function App() {
         paddingBottom: "env(safe-area-inset-bottom, 20px)",
         paddingLeft: "env(safe-area-inset-left, 10px)",
         minHeight: "100vh",
+        backgroundColor: "#fff",
       }}>
       <Navbar />
       <Home />
