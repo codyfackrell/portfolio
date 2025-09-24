@@ -1,6 +1,5 @@
 import React from 'react';
 import Style from './Navbar.module.scss';
-import Toggler from "./home/Toggler";
 import {Box} from "@mui/material";
 import {info} from "../info/Info";
 import {Link} from "react-scroll"
@@ -42,10 +41,6 @@ export default function Navbar({darkMode, handleTheme}) {
                         </li>
                     </Box>
                 ))}
-{/* Dark Mode Toggler */}
-                {/* <li>
-                    <Toggler darkMode={darkMode} handleTheme={handleTheme}/>
-                </li> */}
             </Box>
         </Box>
     )
