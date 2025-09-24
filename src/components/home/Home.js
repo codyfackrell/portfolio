@@ -28,7 +28,6 @@ export default function Home() {
                {info.socials.map((social, index) => (
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
                ))}
-               {/* <a id="ResumeBtn" href="public/cody-fackrell-resume.pdf" download="Cody Fackrell Resume">resume</a> */}
                <Box p={1} border={'1.5px solid black'} borderRadius={'10px'} fontSize={'1rem'}>
                   resume
                 </Box>
