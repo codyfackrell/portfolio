@@ -1,14 +1,8 @@
 import self from "../img/self.png";
 import mock1 from "../img/mock1.png";
 import mock2 from "../img/mock2.png";
-// import mock3 from "../img/mock3.png"
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
 
 export const info = {
   firstName: "Cody",
@@ -20,7 +14,6 @@ export const info = {
   gradient: `-webkit-linear-gradient(135deg, ${colors})`,
   baseColor: colors[0],
   miniBio: [
-    // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
       emoji: "🐝",
       text: "based in utah",
@@ -113,8 +106,8 @@ export const info = {
   portfolio: [
     {
       title: "Tour de Globe",
-      live: "https://www.loom.com/share/407a2b8fbcab4713a93d3a2ba11fac7f?sid=0c5193a5-78cf-4dec-8302-2985f74f9d8d", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: "https://github.com/codyfackrell/TourDeGlobe", // this should be a link to the **repository** of the project, where the code is hosted.
+      live: "https://www.loom.com/share/407a2b8fbcab4713a93d3a2ba11fac7f?sid=0c5193a5-78cf-4dec-8302-2985f74f9d8d",
+      source: "https://github.com/codyfackrell/TourDeGlobe", 
       stack: "React | Node.js | Express.js",
       description:
         "A country flashcard web application to help you learn the capitals and flags of countries around the world in a fun and interactive way.",

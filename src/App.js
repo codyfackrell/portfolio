@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Style from "./App.module.scss";
 import Navbar from "./components/Navbar";
 import Home from "./components/home/Home";
@@ -8,28 +8,15 @@ import Contact from "./components/contact/Contact";
 import { Box } from "@mui/material";
 
 function App() {
-  let [darkMode, setDarkMode] = useState(false);
-
-  function handleToggleDarkMode() {
-    let oppositeOfCurrentDarkMode = !darkMode;
-    console.log(oppositeOfCurrentDarkMode);
-    localStorage.setItem("darkMode", `${oppositeOfCurrentDarkMode}`);
-    setDarkMode(oppositeOfCurrentDarkMode);
-  }
-
-  useEffect(() => {
-    let detectedDarkMode = eval(localStorage.getItem("darkMode"));
-
-    if (detectedDarkMode) {
-      setDarkMode(detectedDarkMode);
-    } else {
-      localStorage.setItem("darkMode", "false");
-    }
-  }, []);
-
   return (
-    <Box className={darkMode ? Style.dark : Style.light}>
-      <Navbar darkMode={darkMode} handleTheme={handleToggleDarkMode} />
+    <Box
+      sx={{
+        paddingTop: "env(safe-area-inset-top, 20px)",
+        paddingRight: "env(safe-area-inset-right, 10px)",
+        paddingBottom: "env(safe-area-inset-bottom, 20px)",
+        paddingLeft: "env(safe-area-inset-left, 10px)",
+      }}>
+      <Navbar />
       <Home />
       <About />
       <Portfolio />
