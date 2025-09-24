@@ -20,7 +20,6 @@ export default function About() {
         width={{ xs: "75%", md: "800px" }}
         height={{ xs: "auto", md: "auto" }}
         justifyContent="center"
-        my="10rem"
         bgcolor="#d4eefc"
         borderRadius="32px"
         p={"25px"}
