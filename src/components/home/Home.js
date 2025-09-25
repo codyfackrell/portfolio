@@ -28,9 +28,9 @@ export default function Home() {
                {info.socials.map((social, index) => (
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
                ))}
-               <Box p={1} border={'1.5px solid black'} borderRadius={'10px'} fontSize={'1rem'}>
+               <a href={"../../public/cody-fackrell-resume.pdf"} p={1} border={'1.5px solid black'} borderRadius={'10px'} fontSize={'1rem'}>
                   resume
-                </Box>
+               </a>
             </Box>
          </Box>
       </Box>
