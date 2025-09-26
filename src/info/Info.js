@@ -44,7 +44,7 @@ export const info = {
     },
   ],
 
-  bio: "Hello! I'm Cody. I have over seven years in the mental health industry working with a variety of populations. Over the last couple of years, I have been able to acquire technical skills that have allowed me to have a unique skill set. I have built several projects utilizing the technologies listed below. Feel free to reach out!",
+  bio: "Hello! I'm Cody. I have over eight years in the mental health industry working with a variety of populations. Over the last couple of years, I have been able to acquire technical skills that have allowed me to have a unique skill set. I have built several projects utilizing the technologies listed below. Feel free to reach out!",
   skills: [
     {
       name: "javascript",
